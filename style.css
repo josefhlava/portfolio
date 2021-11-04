@@ -13,6 +13,8 @@ html {
     font-size: 16px;
 }
 
+/* Header */
+
 header {
     grid-column-start: 3;
     grid-column-end: 11;
@@ -29,6 +31,7 @@ header {
     grid-area: 1 / 1 / span 2 / span 2;
     justify-self: center;
     align-self: center;
+    padding-left: 20px;
 }
 
 .social {
@@ -67,6 +70,8 @@ header {
     color: black;
     border-radius: 10px;
   }
+
+  /* Mobile menu */
 
 .menu-icon {
     grid-area: 2 / 5 / 3 / 6;
