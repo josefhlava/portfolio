@@ -1,0 +1,157 @@
+/* Fonts */
+
+@font-face {
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/inknutantiqua/v9/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4J3TRBYA.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+html {
+    text-align: center;
+    font-size: 16px;
+}
+
+header {
+    grid-column-start: 3;
+    grid-column-end: 11;
+    display: grid;
+    grid-template: 100px 100px / repeat(6, 1fr);
+    grid-auto-rows: 180px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+}
+
+.logo {
+    width: 200px;
+    grid-area: 1 / 1 / span 2 / span 2;
+    justify-self: center;
+    align-self: center;
+}
+
+.social {
+    grid-area: 1 / 2 / 2 / 7;
+    align-self: flex-start;
+    justify-self: flex-end;
+}
+
+.menu {
+    grid-area: 2 / 3 / 3 / 7;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: black;
+    width: 110px;
+    padding: 5px auto;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.3rem;
+    border-radius: 3px;
+}
+
+.menu-item:hover {
+    background-color: red;
+    color: white;
+}
+
+.mobile-container {
+    display: none;
+    max-width: 100px;
+    margin: auto;
+    height: 100px;
+    color: black;
+    border-radius: 10px;
+  }
+
+.menu-icon {
+    grid-area: 2 / 5 / 3 / 6;
+    display: none;
+}
+
+#myLinks {
+    display: none;
+    grid-area: 3 / 1 / 4 / 7;
+    flex-direction: column;
+    height: 100px;
+}
+
+#myLinks a {
+    text-decoration: none;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1rem;
+    color: black;
+}
+  
+.menu-icon a {
+    color: black;
+    display: block;
+}
+  
+.menu-icon a img {
+    display: block;
+    width: 80px;  
+}
+
+/* Social Icons */
+
+.fa {
+    padding: 15px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+/* Responsive design */
+
+@media only screen and (max-width: 800px) {
+    .menu-item {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }   
+}
+
+@media only screen and (max-width: 350px) {
+    .fa {
+        font-size: 12px;
+        width: 12px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .menu-icon a img {
+        width: 50px;  
+    }
+}
