@@ -16,8 +16,6 @@ html {
 /* Header */
 
 header {
-    grid-column-start: 3;
-    grid-column-end: 11;
     display: grid;
     grid-template: 100px 100px / repeat(6, 1fr);
     grid-auto-rows: 180px;
@@ -90,6 +88,7 @@ header {
     font-family: 'Inknut Antiqua', serif;
     font-size: 1rem;
     color: black;
+    margin: 12px 0;
 }
   
 .menu-icon a {
@@ -126,6 +125,15 @@ header {
 .fa-linkedin {
     background: #007bb5;
     color: white;
+}
+
+/* Footer */
+
+footer {
+    border-top: 2px solid black;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 /* Responsive design */
