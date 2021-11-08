@@ -7,8 +7,10 @@ function mobileNav() {
     }
 }
 
+
+let logo = document.getElementById('footer-logo');
+
 function logoSpinner(event) {
-  let logo = document.getElementById('footer-logo');
   let time = Math.floor(Math.random() * 4 + 1);
   let spins = Math.floor(Math.random() * 10 + 1);
   logo.style.transform = `rotate(${spins}turn)`;
@@ -17,4 +19,4 @@ function logoSpinner(event) {
 
 const spinButton = document.getElementById("spin-button");
 
-spinButton.addEventListener('click', logoSpinner)
+logo.addEventListener('click', logoSpinner)
