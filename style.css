@@ -8,9 +8,40 @@
     src: url(https://fonts.gstatic.com/s/inknutantiqua/v9/Y4GSYax7VC4ot_qNB4nYpBdaKUUE4J3TRBYA.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v25/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v25/u-4m0qyriQwlOrhSvowK_l5-eRZOf-LVrPHp.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v25/u-440qyriQwlOrhSvowK_l5-fCZMdeX3rg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Global */
+
 html {
     text-align: center;
     font-size: 16px;
+    font-family: 'Merriweather, serif';
 }
 
 /* Header */
@@ -32,7 +63,7 @@ header {
     padding-left: 20px;
 }
 
-.social {
+header .social {
     grid-area: 1 / 2 / 2 / 7;
     align-self: flex-start;
     justify-self: flex-end;
@@ -49,7 +80,8 @@ header {
     text-decoration: none;
     color: black;
     width: 110px;
-    padding: 5px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-family: 'Inknut Antiqua', serif;
     font-size: 1.3rem;
     border-radius: 3px;
@@ -127,14 +159,66 @@ header {
     color: white;
 }
 
+.fa-github {
+    background: black;
+    color: white;
+}
+
 /* Footer */
 
 footer {
     border-top: 2px solid black;
     max-width: 1200px;
     margin: 0 auto;
-
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
 }
+
+.contact-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact-footer h3 {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 1.6rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-footer p {
+    font-size: 1.2rem;
+}
+
+.middle-footer {
+}
+
+.logo-spinner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#spin-button {
+    margin-top: 20px;
+    background-color: white;
+    font-family: 'Inknut Antiqua', serif;
+    border: 1px soldi black;
+    border-radius: 3px;
+    border
+}
+
+#spin-button:hover {
+    border: 2px red solid;
+}
+
+#footer-logo {
+    width: 180px;
+}
+
 
 /* Responsive design */
 

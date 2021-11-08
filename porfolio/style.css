@@ -1,0 +1,95 @@
+html {
+    text-align: center;
+}
+
+.four-four-two {
+    display: grid;
+    grid-template: repeat(10, 100px) / repeat(10, 1fr);
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-items: center;
+}
+
+.first-name {
+    color: red;
+}
+
+.last-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+#gk-fft:hover #gk-fft-first {
+    display: block;
+    color: blue;
+}
+
+#gk-fft-first {
+    display: none;
+}
+
+#lb-last {
+    display: block;
+}
+
+.nationality {
+    display: none;
+    color: blue;
+}
+
+#eleven {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.gk {
+    grid-area: 8 / 5 / span 1 / span 2;
+}
+
+.lb {
+    grid-area: 6 / 2 / span 1 / span 2;
+}
+
+.cb-one {
+    grid-area: 6 / 4 / span 1 / span 2;
+}
+
+.cb-two {
+    grid-area: 6 / 6 / span 1 / span 2;
+}
+
+.rb {
+    grid-area: 6 / 8 / span 1 / span 2;
+}
+
+.lw {
+    grid-area: 4 / 2 / span 1 / span 2;
+}
+
+.cm-one {
+    grid-area: 4 / 4 / span 1 / span 2;
+}
+
+.cm-two {
+    grid-area: 4 / 6 / span 1 / span 2;
+}
+
+.rw {
+    grid-area: 4 / 8 / span 1 / span 2;
+}
+
+.st-one {
+    grid-area: 2 / 4 / span 1 / span 2;
+}
+
+.st-two {
+    grid-area: 2 / 6 / span 1 / span 2;
+}
+
+#gk-fft-first {
+    display: none;
+}
